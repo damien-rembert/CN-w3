@@ -6,11 +6,32 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+#container {
+
+}
+
+
+div#container {
+    background-color: pink;
+    color: blue;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+
+
+
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
 }
 
+h2 {
+    font-weight: 500;
+}
+
 h1 {
+    width: 100%;
     font-size: 48px;
 }
 
@@ -19,26 +40,4 @@ ul, p, a, input, button {
     font-weight: 700;
 }
 
-span {
-    font-size: 48px;
-    font-weight: 900;
-}
 
-input {
-    padding: 10px;
-}
-
-img {
-    display: block;
-}
-
-button {
-    background-color: goldenrod;
-    border: none;
-    padding: 10px;
-    margin-left: 40px;
-}
-
-button:hover {
-    color: orangered;
-}

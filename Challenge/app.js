@@ -7,7 +7,8 @@ const history = document.getElementById("history");
 
 document.addEventListener("keydown", (event) => {
     displayP(event);
-    addLetter(event)
+    addLetter(event);
+    madLad();
 })
 
 // document.addEventListener("keyup", (e) => {
@@ -23,6 +24,10 @@ function displayP(event) {
 }
 
 // let go off the key you mad lad + crazy flashing css
+function madLad() {
+    
+    
+}
 
 
 
@@ -31,14 +36,23 @@ function displayP(event) {
 // adding new elements
 
 function addLetter(event) {
+    let listItems = document.getElementsByTagName("li");
+    let previousItem = listItems[0];
+
 
     // create the element to be added to the list
-    let listItem = document.createElement('li');
+    let newItem = document.createElement('li');
 
-    listItem.innerHTML = event.key;
+    newItem.innerHTML = event.key;
 
     // add at the end of the list
-    history.appendChild(listItem);
+    history.insertBefore(newItem, previousItem);
+
+    if (listItems.length > 10) {
+        
+        history.removeChild(listItems[10]);
+        
+    }
 }
 
 

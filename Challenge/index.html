@@ -4,23 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <source src="./styles/style.css" type="text/css">
-    <title>Removing Elements</title>
+    <link  rel="stylesheet" href="./styles/style.css" type="text/css">
+
+
+    <title>Displaying keypress events</title>
 </head>
 <body>
+    <div id="container">
+
     <h1>Key pressed</h1>
 
-    <div id="output">
-        <p id="key" class="keybox"></p>
-        <p id="which" class="keybox"></p>
-        <p id="code" class="keybox"></p>
+    <div>
+        <div class="box">
+            <p class="title">event.key</p>
+            <p id="key" class="result">_</p>
+        </div>
+
+        <div class="container">
+            <p class="title">event.which</p>
+            <p id="which" class="result">_</p>
+        </div>
+
+        <div class="container">
+            <p class="title">event.code</p>
+            <p id="code" class="result">_</p>
+        </div>
+    </div>
+
+    <div id="list">
+        <h2>Last keys pressed</h2>
+        <ul id="history">
+        </ul>
+    
+
+
     </div>
 
 
 
-    <h2>Last keys pressed</h2>
-    <ul id="history">
-    </ul>
+
+
+
+</div>
+
 
     <script src="app.js"></script>
 </body>
