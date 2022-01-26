@@ -4,11 +4,12 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: aqua;
 }
 
-#container {
+/* #container {
 
-}
+} */
 
 
 div#container {
@@ -18,11 +19,87 @@ div#container {
     flex-direction: row;
     flex-flow: wrap;
 
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+}
 
+div#results {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+div.box {
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+
+    border: 2px;
+    border-color: yellow;
+    border-style: solid;
+}
+
+p.title {
+    border: 2px;
+    border-color: red;
+    border-style: solid;
+}
+
+
+p.result {
+    border: 2px;
+    border-color: red;
+    border-style: solid;
+}
+
+div#list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    border: 2px;
+    border-color: yellow;
+    border-style: solid;
+}
+
+h2 {
+    width: 100%;
+    border: 2px;
+    border-color: red;
+    border-style: solid;
+}
+
+ul#history {
+    border: 2px;
+    border-color: red;
+    border-style: solid;
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+li {
+    width: 10%;
+}
+
+
+
+
+
+h1, h2 {
     font-weight: 900;
 }
 
@@ -33,6 +110,13 @@ h2 {
 h1 {
     width: 100%;
     font-size: 48px;
+
+
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+
+
 }
 
 ul, p, a, input, button {
@@ -40,4 +124,16 @@ ul, p, a, input, button {
     font-weight: 700;
 }
 
+
+/* 
+h1
+div#results
+    div.box
+        p.title
+        p.result
+div#list
+    h2
+    ul#history
+
+ */
 
