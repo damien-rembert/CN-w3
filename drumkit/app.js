@@ -8,12 +8,18 @@ const history = document.getElementById("history");
 document.addEventListener("keydown", (event) => {
     displayP(event);
     addLetter(event);
-    madLad();
+    
 })
 
 // document.addEventListener("keyup", (e) => {
 //     alert(`you pressed: ${e}`);
 // })
+
+function play(sound) {
+    // stop (in case already playing)
+    // rewind
+    // play
+}
 
 function displayP(event) {
     // create a p to add to the div

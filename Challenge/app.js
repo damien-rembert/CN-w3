@@ -8,7 +8,7 @@ const history = document.getElementById("history");
 document.addEventListener("keydown", (event) => {
     displayP(event);
     addLetter(event);
-    madLad();
+    // madLad();
 })
 
 // document.addEventListener("keyup", (e) => {
