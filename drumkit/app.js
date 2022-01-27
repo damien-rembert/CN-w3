@@ -1,6 +1,14 @@
-// most common sounds ee è ah T O N R ss z sh d L F k M oo shwa Guy d Jouet Papa B V THick THis  
+// do a slap game
+// when space hit: slap sound
+// upload face?
+// click on face to slap it?
+
+
+
+
+// most common sounds spEEd lEd lAvish T lOrd N R ss z sh d L F k M oo stUnned Guy d Journey Papa B V THick THis  
 // link common sounds
-//
+// when ctrl pressed play alt sounds for that letter?
 
 
 const keyP = document.getElementById("key");
