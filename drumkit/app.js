@@ -1,3 +1,8 @@
+// most common sounds ee è ah T O N R ss z sh d L F k M oo shwa Guy d Jouet Papa B V THick THis  
+// link common sounds
+//
+
+
 const keyP = document.getElementById("key");
 const whichP = document.getElementById("which");
 const codeP = document.getElementById("code");
