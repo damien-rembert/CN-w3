@@ -91,6 +91,11 @@ li {
 
 h1 {
     font-weight: 900;
+    width: 100%;
+    font-size: 48px;
+    text-align: center;
+
+
 }
 
 h2 {
@@ -99,13 +104,6 @@ h2 {
 
 }
 
-h1 {
-    width: 100%;
-    font-size: 48px;
-    text-align: center;
-
-
-}
 
 ul, p, a, input, button {
     font-size: 24px;
