@@ -24,10 +24,8 @@ function displayP(event) {
 }
 
 // let go off the key you mad lad + crazy flashing css
-function madLad() {
-    
-    
-}
+// function madLad() {
+// }
 
 
 
