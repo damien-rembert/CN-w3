@@ -1,14 +1,6 @@
-// do a slap game
-// when space hit: slap sound
-// upload face?
-// click on face to slap it?
-
-
-
-
 // most common sounds spEEd lEd lAvish T lOrd N R ss z sh d L F k M oo stUnned Guy d Journey Papa B V THick THis  
 // link common sounds
-// when ctrl pressed play alt sounds for that letter?
+// when shift or caps lock pressed play alt sounds for that letter?
 
 
 const keyP = document.getElementById("key");
