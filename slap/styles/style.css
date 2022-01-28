@@ -10,21 +10,15 @@ body {
     
 }
 
-/* #container {
-
-} */
-
-
 div#container {
-    background-color: pink;
     /* color: blue; */
     display: flex;
     flex-direction: column;
 
-    border: 2px;
-    border-color: blue;
-    border-style: solid;
+}
 
+div#title_box {
+    height: 25%;
 }
 
 
@@ -37,10 +31,7 @@ div#main {
 
     /* justify-content: space-evenly;
     align-items: center; */
-    border: 2px;
-    border-color: orangered;
-    border-style: solid;
-    overflow:hidden;
+    /* overflow:hidden; */
 }
 
 
@@ -59,34 +50,26 @@ div#center {
 }
 
 div#fg {
-    position: absolute;
+    position: fixed;
     top: 50%;
-    right: 25%;
+    right: 0%;
     z-index: 2;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 00);
-    color: white;
     width: 50%;
     height: 50%;
 
     
-    border: 2px;
-    border-color: yellow;
-    border-style: solid;
 }
 
-div#fg:hover {
+/* div#fg:hover {
     border: 5px;
     border-color: red;
     border-style: solid;
 
-
     animation-name: slap;
     animation-duration: 2s;
-
-
-}
-
+} */
 
 /* @keyframes slapping {
     0% {
@@ -100,27 +83,53 @@ div#fg:hover {
     }
 } */
 
+img#hand {
+    z-index: 3;
+    background-color: transparent;
+    height: 55%;
+    margin-left: 75%;
+    margin-top: 5%;
+
+}
+
+
 @keyframes slap {
-    0%, 100%{
+    0% {
+        transform: rotate(30deg);
+        /* right: 25%; */
+        margin-left: 55%;
+    }
+    25% {
+        transform: rotate(45deg);
+        /* right: 75%; */
+        margin-top: 15%;
+
+    }
+    50% {
+        transform: rotate(55deg);
+        /* right: 75%; */
+        margin-left: 0%;
+        margin-top: 10%;
+    }
+    55% {
         transform: rotate(0deg);
+        /* right: 25%; */
     }
-    50%{
-        transform: rotate(-10deg);
+    100% {
+        transform: rotate(0deg);
+        /* right: 25%; */
+        margin-left: 75%;
     }
+
 } 
 
 
 
 div#uploader {
-    width: 100%;
+    width: 45%;
     color: black;
     display: flex;
-    flex-direction: row;
-
-    border: 2px;
-    border-color: white;
-    border-style: solid;
-
+    flex-direction: column;
 }
 
 p.title {
@@ -147,16 +156,6 @@ ul, p, a, input, button, label {
     font-weight: 500;
 }
 
-img#hand {
-    z-index: 3;
-    background-color: transparent;
-    height: 50%;
-
-    border: 2px;
-    border-color: white;
-    border-style: solid;
-
-}
 
 
 /* 

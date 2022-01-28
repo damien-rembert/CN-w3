@@ -37,19 +37,24 @@ buttonID.addEventListener("click", () => {face.src = inputID.value;})
 //     boom.pause()
 //     boom.currentTime = 0
 //     boom.play();
-
+let slaps = 0;
 
 document.addEventListener("keydown", (event) => {
     if (checkSpace(event)) {
-        slap();        
-    }
-    if (checkK(event)) {
+        if (slaps > 5) {
+            alert(`You've slapped them ${slaps} times.\nMaybe give them a kiss with "k"?.`);
+        }
+        slap();
+        slaps++;
+        
+        } else if (checkK(event)) {
         kiss();
-    }
-    // else 
-    // {
-    //     alert(`you pressed: ${event.key}.\nThat's cool and all but only space works.`);
-    // }    
+        slaps = 0;
+        } else if (event.key == "F5") {
+        return;
+        } else {
+            alert(`You pressed ${event.key}.\nThat's cool and all but only space works.`);
+    }    
 })
 
 // 
@@ -61,7 +66,6 @@ function slap() {
 }
 
 function kiss() {
-
     playSound(kiss_sound);
 }
 
@@ -84,14 +88,26 @@ function checkK(event) {
 }
 
 
+// function moveHand() {
+//     handID.style.backgroundColor = "red";
+//     handBoxID.style.animation = "slap 1s linear"
+//     setTimeout(() => {
+//         handBoxID.style.removeProperty('animation')
+//         handID.style.backgroundColor = "";
+//     }, 1000);
+// }
+
 function moveHand() {
-    handID.style.backgroundColor = "red";
-    handBoxID.style.animation = "slap 0.5s linear"
+    // handID.style.backgroundColor = "red";
+    handID.style.animation = "slap 0.3s linear"
     setTimeout(() => {
-        handBoxID.style.removeProperty('animation')
-        handID.style.backgroundColor = "";
-    }, 50);
+        handID.style.removeProperty('animation')
+        // handID.style.backgroundColor = "";
+    }, 400);
 }
+
+
+
 // main.style.animation = "mainDrum 0.1s linear"
 //         setTimeout(() => {
 //             main.style.removeProperty('animation')
