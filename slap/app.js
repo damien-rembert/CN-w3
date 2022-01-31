@@ -1,3 +1,5 @@
+// @ts-check
+
 // do a slap game
 // when space hit: slap sound
 
@@ -25,7 +27,7 @@ const handID = document.getElementById("hand");
 const handBoxID = document.getElementById("fg");
 
 // buttonID.addEventListener("click", () => {imageID.src = inputID.value;})
-buttonID.addEventListener("click", () => {face.src = inputID.value;})
+buttonID.addEventListener("click", () => {imageID.src = inputID.value;})
 
 
 
@@ -50,7 +52,7 @@ document.addEventListener("keydown", (event) => {
         } else if (checkK(event)) {
         kiss();
         slaps = 0;
-        } else if (event.key == "F5") {
+        } else if ((event.key == "F5") || (event.key == "Tab") || (event.key == "Control") || (event.key == "v")) {
         return;
         } else {
             alert(`You pressed ${event.key}.\nThat's cool and all but only space works.`);
